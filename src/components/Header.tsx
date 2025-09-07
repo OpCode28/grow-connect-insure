@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sprout, Menu } from "lucide-react";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
   return (
@@ -32,6 +33,7 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSelector />
             <Button variant="ghost" className="text-foreground hover:text-primary">
               Sign In
             </Button>
